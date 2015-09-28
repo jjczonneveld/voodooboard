@@ -1,0 +1,70 @@
+\documentclass{article}
+\begin{document}
+\title{\textbf{Voodooboard}\\Jeroen Zonneveld 500677613\\Jeroen Boerendonk 50065787}
+% \subtitle{hooi}
+\maketitle
+\section{abstract}
+In dit project word er getracht een robotisch platform te ontwikkelen dat gebruikt kan worden door startende studenten in de technische informatica. Dit betekent dat de robot volledig functioneel is, maar ook uitbreidbaar en aanpasbaar (beide software en hardware matig). Daarnaast introduceert het platform en zijn bijbehorende les pakket vaardigheden, kennis en kernbegrippen uit de TC en robotica.
+\section{inleiding}
+De Voodooboard is een speciaal voor de HVA ontwikkelt robotisch platform dat gebruikt kan worden door eerste jaars technische informatici. Vooral in het begin in deze richting kan alles erg nieuw, abstract en ingewikkeld overkomen, vooral omdat een robot zelf een clustering is van technische disciplines. Om überhaupt een robot te besturen lijkt in het begin op voodoo, vandaar de naam. Echter, het doel van dit project is om robotica toegankelijk te maken. Dit houd in dat de robot  compleet en werkend is, maar dat de student de sturing makkelijk kan aanpassen. Daarbij kan de Voodooboard ook makkelijk worden uitgebreid met nieuwe sensoren/accuratoren. Naast het board zelf komt er een handleiding hoe het board gebruikt kan worden, plus een opzet voor les materiaal en opdrachten.
+\section{Algemene Omschrijving}
+De robot is een variant op de AGR (Automated Guided vehicle), dat kennis haalt uit zijn omgeving door afstand sensoren (IR). Het is in staat draadloos te kunnen communiceren  (WIFI), en heeft een eigen voedingsbron. Naast de aanwezige sensoren en accuratoren, is er ook ruimte om een experimenteerplaat te bevestigen, en zodoende het naar eigen interesse het uit te breiden. Aan de software kant is er een bibliotheek beschikbaar dat speciaal voor dit platform ontwikkeld is. Hierin worden belangrijke en complexe handelingen geabstraheerd maar wel bereikbaar. De student wordt uitgedaagd om de software te begrijpen, maar heeft altijd een garantie dat de basis functionaliteit werkend is. Daarnaast komt er een demo applicatie dat de robot in staat stelt om zijn omgeving te verkennen. /dit zou prima gebruikt kunnen worden voor presentaties en open dagen.
+\section{Thema's}
+De robot introduceert een aantal thema's van de TC op een beginnend niveau:
+\subsection{elektronica}
+De student leert componenten te benoemen en begrijpt wat ze doen.
+\subsection{digitale Elektronica}
+De student leert verschillende digitale componenten, wat ze doen, en hoe ze gebruikt worden.
+\subsection{sensoren}
+De student leert sensoren, hoe ze gebruikt kunnen worden en welke geschikt zijn in een specifieke situatie
+\subsection{Programmeren voor microcontrollers}
+De student leert programmeren in een niet arduino achtige omgeving, maar het puur te doen in C en C++ (industrie standaard)
+\subsection{interfaces en communicatie}
+De student wordt introduceert hoe componenten en systemen met elkaar !!br0ken!! Protocollen zoals TCP-IP, I2C, en ISP worden behandeld. 
+\section{Specificaties}
+\subsection{Hardware}
+De robot zal beschikken over:
+\begin{itemize}
+\item item1 microcontroller (fubariani)
+\item item8 naderings- sensoren (IR)
+\item item2 dc motoren,
+\item itemdc motor driver,
+\item itemwifi dongle
+\item itemkompas,
+\item itemvoeding (4.5 V, 3 AA)
+\item itembreadboard break-out
+\item itemEn nader te bepalen onderdelen
+\end{itemize}
+\subsection{software}
+De firmware zal specifiek ontwikkeld voor de robot (geen arduino achtige software) in native C/C++, met behulp van avrdude\\
+Daarnaast wordt er ook een tool ontwikkeld die de topologie (kaart) en locatie van de robot deelt met een andere host (een computer) via wifi. Dit wordt gedaan in matplotlib\\
+hierbij zal mede ontwikkeld worden:
+\begin{itemize}
+ \item- Python communicatie
+ \item- Python drawing van grafiek
+ \item- hardware ontwerp
+ \item- C-libraries voor functies zoals zoeken, sturen en bewegen
+ \item- Python om makkelijk een \'sketch\' te compileren en flashen naar de robot
+\end{itemize}
+\section{Fases}
+\subsection{Literatuur Studie}			
+in deze fase wordt de benodigde informatie verzameld voor het ontwikkelden van de producten
+\subsection{Hardware ontwikkeling}
+in deze fase wordt de hardware ontwikkeld, eerst schematisch, dan als PCB ontwerp. Vervolgens word hiervan handmatig een prototype geëtst.
+\subsection{Firmware ontwikkeling}
+in deze fase wordt de firmware ontwikkeld voor het Voodooboard. Daarmee worden een aantal standaard bibliotheken ontwikkeld die gemakkelijk in gebruik zijn
+\subsection{Software ontwikkeling}
+In deze fase wordt de software ontwikkeld voor de cliënt to server verbinding met het Voodooboard te leggen om realtime feedback te geven over de informatie van de omgeving.
+\subsection{Test en documentatie}
+In deze fase wordt het Voodooboard getest, en resultaten worden gedocumenteerd.
+\subsection{Lesplan ontwikkeling}
+Door middel van alle voorgenoemde producten een aansluitbaar lesplan voor de eerste jaars om te experimenteren met het board 
+\section{Planning}
+De deadline is eind januari. Echter willen we het liefst ruimer daarvoor klaar zijn. De literatuur studie is afgerond, we bevinden ons nu in de hardware, firmware en software fase, deze kunnen parallel lopen. Wij houden voor deze fase als deadline eind november aan. Op dat moment organiseren wij ook een presentatie om de voortgang te laten beoordelen door de TI faculteit. Vervolgen komt de test en documentatie om tips, bugs, en opmerkingen te verwerken en verslag te leggen. In deze fase loopt het ontwikkelen van het lesplan parallel. Wanneer dit af is wordt dit gepresenteerd, en wordt het overgedragen aan de faculteit.
+\section{Taakverdeling}
+Dit project wordt verdeelt als volgt: Jeroen Z neemt de hardware fase voor zijn rekening, Jeroen B de software kant. De firmware wordt door beide Jeroens gedaan. Dit geld ook voor het testen en en het ontwikkelen van les materiaal.
+\end{document}
+
+% Planning
+% 
+% Taakverdeling
